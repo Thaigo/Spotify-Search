@@ -1,8 +1,8 @@
-import { Routes, RouterModule } from '@angular/router/router';
-import { ModuleWithProviders } from '@angular/core/core';
+import {ModuleWithProviders} from '@angular/core';
+import {Routes, RouterModule} from '@angular/router';
 
-import { AboutComponent } from './components/about/about.component';
-import { SearchComponent } from './components/search/search.component';
+import {SearchComponent} from './components/search/search.component';
+import {AboutComponent} from './components/about/about.component';
 
 const appRoutes: Routes = [
     {
@@ -16,4 +16,5 @@ const appRoutes: Routes = [
     }
 ];
 
+// tslint:disable-next-line:eofline
 export const routing: ModuleWithProviders = RouterModule.forRoot(appRoutes);
